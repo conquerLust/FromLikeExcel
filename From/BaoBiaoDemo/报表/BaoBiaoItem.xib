@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="GUV-tx-0My" customClass="BaoBiaoItem">
+            <rect key="frame" x="0.0" y="0.0" width="193" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="193" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOOD" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uzu-BW-CNk">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1eC-Xy-Jn3">
+                        <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="mn2-NM-fa4"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="1" id="vh3-tC-0zP"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="1eC-Xy-Jn3" secondAttribute="bottom" constant="-8" id="1Yb-9B-tth"/>
+                <constraint firstAttribute="bottom" secondItem="Uzu-BW-CNk" secondAttribute="bottom" id="EL7-T8-hKs"/>
+                <constraint firstItem="1eC-Xy-Jn3" firstAttribute="top" secondItem="GUV-tx-0My" secondAttribute="top" constant="-8" id="PBa-xe-uKI"/>
+                <constraint firstItem="Uzu-BW-CNk" firstAttribute="top" secondItem="GUV-tx-0My" secondAttribute="top" id="Pg8-ol-gVN"/>
+                <constraint firstAttribute="trailing" secondItem="Uzu-BW-CNk" secondAttribute="trailing" constant="4" id="YAW-NL-v8e"/>
+                <constraint firstAttribute="trailing" secondItem="1eC-Xy-Jn3" secondAttribute="trailing" id="ddX-P5-5fb"/>
+                <constraint firstItem="Uzu-BW-CNk" firstAttribute="leading" secondItem="GUV-tx-0My" secondAttribute="leading" constant="4" id="wAo-YJ-8YG"/>
+            </constraints>
+            <size key="customSize" width="193" height="50"/>
+            <connections>
+                <outlet property="lineView" destination="1eC-Xy-Jn3" id="9rQ-5f-Tvp"/>
+                <outlet property="mLabel" destination="Uzu-BW-CNk" id="yde-3H-vPY"/>
+            </connections>
+            <point key="canvasLocation" x="171.5" y="207"/>
+        </collectionViewCell>
+    </objects>
+</document>
